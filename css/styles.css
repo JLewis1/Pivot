@@ -30,7 +30,8 @@ header {
   height: 155px;
   min-height: 132px; }
   header .content {
-    margin-right: 23%; }
+    margin-right: 23%;
+    width: 100%; }
     header .content .right, header .content .left {
       float: left;
       width: 50%;
@@ -38,7 +39,7 @@ header {
     header .content .right #logo {
       float: left;
       margin-top: 48px;
-      margin-left: 25%; }
+      margin-left: 37%; }
       header .content .right #logo img {
         width: 100%; }
 
@@ -50,7 +51,7 @@ header {
   width: 104px;
   position: relative;
   top: 41%;
-  left: -14%; }
+  left: -31%; }
   #nav #menu-text {
     margin-top: 3px;
     display: inline-block;
@@ -88,89 +89,97 @@ article {
     border-bottom: 30px solid #ebebeb; }
     article .banner .content {
       text-align: center; }
-  article .content-area-container .description {
-    width: 1229px;
-    margin: 0 auto; }
-    article .content-area-container .description .menu {
-      float: left;
-      width: 20%; }
-      article .content-area-container .description .menu ul {
-        list-style: none; }
-        article .content-area-container .description .menu ul li.active span {
-          color: white; }
-        article .content-area-container .description .menu ul li {
-          width: 70%;
-          height: 69px;
-          cursor: pointer;
-          padding: 0 0 0 75px; }
-          article .content-area-container .description .menu ul li span {
-            padding-top: 13px;
-            display: block;
-            font-size: 16pt;
-            text-transform: uppercase;
-            width: 175px;
-            color: #d8d8d8; }
-          article .content-area-container .description .menu ul li:first-child {
-            background: url("../img/cleanse-nav-icon-off.png") 10px 10px no-repeat; }
-          article .content-area-container .description .menu ul li:first-child.active {
-            background: url("../img/cleanse-nav-icon.png") 10px 10px no-repeat;
-            background-color: #31af90; }
-          article .content-area-container .description .menu ul li:nth-child(2) {
-            background: url("../img/mgmt-nav-icon-off.png") 10px 10px no-repeat; }
-          article .content-area-container .description .menu ul li:nth-child(2).active {
-            background: url("../img/mgmt-nav-icon.png") 10px 10px no-repeat;
-            background-color: #31af90; }
-          article .content-area-container .description .menu ul li:nth-child(3) {
-            background: url("../img/market-nav-icon-off.png") 10px 10px no-repeat; }
-          article .content-area-container .description .menu ul li:nth-child(3).active {
-            background: url("../img/market-nav-icon.png") 10px 10px no-repeat;
-            background-color: #31af90; }
-    article .content-area-container .description #mgmt-content, article .content-area-container .description #market-content {
-      display: none; }
-    article .content-area-container .description .content-area {
-      float: left;
-      width: 80%;
-      background: url("../img/content-bg.png") left top repeat-x;
-      margin-bottom: 20px; }
-      article .content-area-container .description .content-area h1 {
-        color: white;
-        padding: 19px 0 0 42px;
-        display: inline-block; }
-      article .content-area-container .description .content-area .floated-text {
-        width: 100%;
-        padding: 30px 0px 0px 42px; }
-        article .content-area-container .description .content-area .floated-text ul {
-          margin: 0.75em 0;
-          padding: 0 1em;
+  article .content-area-container {
+    width: 100%;
+    display: block; }
+    article .content-area-container .description {
+      max-width: 1229px;
+      margin: 0 auto; }
+      article .content-area-container .description .menu {
+        float: left;
+        width: 25%; }
+        article .content-area-container .description .menu ul {
           list-style: none; }
-        article .content-area-container .description .content-area .floated-text li:before {
-          content: "";
-          border-color: transparent #00768d;
-          border-style: solid;
-          border-width: 0.35em 0 0.35em 0.45em;
-          display: inline-block;
-          height: 0;
-          width: 0; }
-        article .content-area-container .description .content-area .floated-text li {
-          margin-bottom: 20px; }
-          article .content-area-container .description .content-area .floated-text li span {
-            margin-left: 10px; }
-        article .content-area-container .description .content-area .floated-text p {
-          margin-bottom: 20px; }
-        article .content-area-container .description .content-area .floated-text img {
-          margin-left: 20px; }
-      article .content-area-container .description .content-area .content-text {
-        clear: both;
-        padding-bottom: 30px; }
-        article .content-area-container .description .content-area .content-text ul {
-          padding-left: 20px; }
-        article .content-area-container .description .content-area .content-text p {
-          margin-bottom: 20px; }
-      article .content-area-container .description .content-area .floated-img {
-        width: 28%;
-        margin-top: 20px; }
-      article .content-area-container .description .content-area .floated-img.right {
-        width: 28%; }
+          article .content-area-container .description .menu ul li.active span {
+            color: white; }
+          article .content-area-container .description .menu ul li {
+            width: 76%;
+            height: 69px;
+            cursor: pointer;
+            padding: 0 0 0 75px; }
+            article .content-area-container .description .menu ul li span {
+              padding-top: 21px;
+              display: block;
+              font-size: 15pt;
+              text-transform: uppercase;
+              width: 197px;
+              color: #d8d8d8; }
+            article .content-area-container .description .menu ul li:first-child {
+              background: url("../img/cleanse-nav-icon-off.png") 10px 10px no-repeat; }
+            article .content-area-container .description .menu ul li:first-child.active {
+              background: url("../img/cleanse-nav-icon.png") 10px 10px no-repeat;
+              background-color: #31af90; }
+            article .content-area-container .description .menu ul li:nth-child(2) {
+              background: url("../img/mgmt-nav-icon-off.png") 10px 10px no-repeat; }
+            article .content-area-container .description .menu ul li:nth-child(2).active {
+              background: url("../img/mgmt-nav-icon.png") 10px 10px no-repeat;
+              background-color: #31af90; }
+            article .content-area-container .description .menu ul li:nth-child(3) {
+              background: url("../img/market-nav-icon-off.png") 10px 10px no-repeat; }
+            article .content-area-container .description .menu ul li:nth-child(3).active {
+              background: url("../img/market-nav-icon.png") 10px 10px no-repeat;
+              background-color: #31af90; }
+      article .content-area-container .description #mgmt-content, article .content-area-container .description #market-content {
+        display: none; }
+      article .content-area-container .description .content-area {
+        float: left;
+        width: 75%;
+        background: url("../img/content-bg.png") left top repeat-x;
+        margin-bottom: 20px; }
+        article .content-area-container .description .content-area .subheader {
+          margin: 20px 0; }
+          article .content-area-container .description .content-area .subheader h1 {
+            text-transform: none;
+            padding-top: 0px; }
+        article .content-area-container .description .content-area h1 {
+          color: white;
+          padding: 19px 0 0 42px;
+          display: inline-block; }
+        article .content-area-container .description .content-area .floated-text {
+          width: 100%;
+          padding: 30px 0px 0px 42px; }
+          article .content-area-container .description .content-area .floated-text ul {
+            margin: 0.75em 0;
+            padding: 0 1em;
+            list-style: none; }
+          article .content-area-container .description .content-area .floated-text li:before {
+            content: "";
+            border-color: transparent #00768d;
+            border-style: solid;
+            border-width: 0.35em 0 0.35em 0.45em;
+            display: inline-block;
+            height: 0;
+            width: 0; }
+          article .content-area-container .description .content-area .floated-text li {
+            margin-bottom: 20px; }
+            article .content-area-container .description .content-area .floated-text li span {
+              margin-left: 10px; }
+          article .content-area-container .description .content-area .floated-text p {
+            margin-bottom: 20px; }
+          article .content-area-container .description .content-area .floated-text img {
+            margin-left: 20px; }
+        article .content-area-container .description .content-area .content-text {
+          clear: both;
+          padding-bottom: 30px; }
+          article .content-area-container .description .content-area .content-text ul {
+            padding-left: 20px; }
+          article .content-area-container .description .content-area .content-text p {
+            margin-bottom: 20px; }
+        article .content-area-container .description .content-area .floated-img {
+          width: 28%;
+          margin-top: 20px; }
+        article .content-area-container .description .content-area .floated-img.right {
+          width: 28%; }
   article .content .left {
     width: 60%;
     height: 100%; }
@@ -287,6 +296,8 @@ footer {
     padding: 0px 20px; }
     #services-detail article .content-area-container .description .content-area .subheader, #case-studies-detail article .content-area-container .description .content-area .subheader {
       margin: 20px 0; }
+      #services-detail article .content-area-container .description .content-area .subheader h1, #case-studies-detail article .content-area-container .description .content-area .subheader h1 {
+        text-transform: none; }
     #services-detail article .content-area-container .description .content-area h1, #case-studies-detail article .content-area-container .description .content-area h1 {
       color: #00758c;
       font-size: 21pt;

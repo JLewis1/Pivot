@@ -43,6 +43,7 @@ header
 	min-height: 132px
 	.content
 		margin-right: 23%
+		width: 100%
 		.right, .left
 			float: left
 			width: 50%
@@ -51,7 +52,7 @@ header
 			#logo
 				float: left
 				margin-top: 48px
-				margin-left: 25%
+				margin-left: 37%
 				img
 					width: 100%
 #nav
@@ -62,7 +63,7 @@ header
 	width: 104px
 	position: relative
 	top: 41%
-	left: -14%
+	left: -31%
 	#menu-text
 		margin-top: 3px
 		display: inline-block
@@ -106,28 +107,30 @@ article
 		.content
 			text-align: center
 	.content-area-container
+		width: 100%
+		display: block
 		.description
-			width: 1229px
+			max-width: 1229px
 			margin: 0 auto
 			.menu
 				float: left
-				width: 20%
+				width: 25%
 				ul
 					list-style: none
 					li.active
 						span
 							color: #fff
 					li
-						width: 70%
+						width: 76%
 						height: 69px
 						cursor: pointer
 						padding: 0 0 0 75px
 						span
-							padding-top: 13px
+							padding-top: 21px
 							display: block
-							font-size: 16pt
+							font-size: 15pt
 							text-transform: uppercase
-							width: 175px
+							width: 197px
 							color: #d8d8d8
 						&:first-child
 							background: url('../img/cleanse-nav-icon-off.png') 10px 10px no-repeat
@@ -149,9 +152,15 @@ article
 
 			.content-area
 				float: left
-				width: 80%
+				width: 75%
 				background: url('../img/content-bg.png') left top repeat-x
 				margin-bottom: 20px
+
+				.subheader
+					margin: 20px 0
+					h1
+						text-transform: none
+						padding-top: 0px
 				h1
 					color: #fff
 					padding: 19px 0 0 42px
@@ -331,6 +340,8 @@ footer
 
 					.subheader
 						margin: 20px 0
+						h1
+							text-transform: none
 					h1
 						color: #00758c
 						font-size: 21pt
