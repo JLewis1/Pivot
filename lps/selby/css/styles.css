@@ -1,0 +1,123 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+  body #lp {
+    margin: 0 auto;
+    width: 1000px; }
+    body #lp header {
+      height: 124px;
+      background-color: #f8f8f8; }
+      body #lp header #main-logo {
+        float: left;
+        margin-left: 35px; }
+      body #lp header #header-contact {
+        float: right;
+        padding: 26px 10px 0px 0px;
+        font-weight: bold;
+        line-height: 1.2em; }
+    body #lp article #hero {
+      background: url("../img/hero.jpg") left top no-repeat;
+      width: 1000px;
+      height: 873px;
+      color: #f6f5db; }
+      body #lp article #hero #hero-title {
+        padding: 10px 0px 0px 20px; }
+        body #lp article #hero #hero-title h1 {
+          font-size: 37.17pt; }
+        body #lp article #hero #hero-title h2 {
+          font-size: 21.16pt; }
+      body #lp article #hero #hero-form {
+        background: url("../img/register-bg.png");
+        float: right;
+        width: 401px;
+        height: 625px;
+        margin: 14px 20px 0 auto; }
+        body #lp article #hero #hero-form #form-title {
+          text-align: center;
+          width: 100%;
+          margin-top: 20px;
+          line-height: 2.3em; }
+          body #lp article #hero #hero-form #form-title h1 {
+            font-size: 27pt; }
+          body #lp article #hero #hero-form #form-title h2 {
+            font-size: 21pt; }
+          body #lp article #hero #hero-form #form-title span {
+            text-decoration: underline; }
+        body #lp article #hero #hero-form form {
+          display: inline-block;
+          margin: 10px 0 0 39px;
+          width: 100%; }
+          body #lp article #hero #hero-form form input {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            padding: 5px;
+            width: 80%; }
+          body #lp article #hero #hero-form form label {
+            padding: 13px 0 7px 0;
+            display: inline-block; }
+          body #lp article #hero #hero-form form .checkbox {
+            font-size: 8pt;
+            text-align: center;
+            margin-left: -70px;
+            text-transform: uppercase; }
+            body #lp article #hero #hero-form form .checkbox input {
+              width: 12px; }
+            body #lp article #hero #hero-form form .checkbox label {
+              padding-left: 27px; }
+          body #lp article #hero #hero-form form button {
+            background-color: #eb2227;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            border: 0px;
+            color: white;
+            padding: 5px;
+            height: 51px;
+            font-size: 17.63pt;
+            margin-left: 15px;
+            margin-top: 15px;
+            width: 75%; }
+            body #lp article #hero #hero-form form button:hover {
+              cursor: pointer; }
+    body #lp article #location-time {
+      background: url("../img/info.jpg") left bottom no-repeat;
+      padding: 10px; }
+      body #lp article #location-time #date-cell {
+        float: left;
+        margin-right: 40px; }
+      body #lp article #location-time #location-copy {
+        float: left; }
+      body #lp article #location-time #map {
+        float: right; }
+  body footer {
+    background-color: #807f83; }
+    body footer p, body footer .fine-print {
+      color: white;
+      font-size: 12px;
+      padding: 10px 10px 10px 10px; }
+    body footer #sponsors {
+      clear: both;
+      background-color: #e6e5e9; }
+      body footer #sponsors span {
+        font-size: 10pt;
+        margin-top: 25px;
+        margin-left: 12px;
+        margin-right: 18px; }
+      body footer #sponsors span, body footer #sponsors p {
+        float: left;
+        display: inline-block;
+        color: #807f83; }
+      body footer #sponsors #sponsor-logos {
+        float: left;
+        height: 68px; }
+        body footer #sponsors #sponsor-logos img {
+          float: left;
+          padding: 12px 8px; }
+      body footer #sponsors p {
+        width: 55%; }
+
+.red {
+  color: #eb2227; }
+
+.clear {
+  clear: both; }

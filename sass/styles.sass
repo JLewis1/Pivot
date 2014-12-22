@@ -1,0 +1,578 @@
+@mixin input-placeholder
+	&.placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+	&::-webkit-input-placeholder
+		@content
+
+@mixin circle
+	border-radius: 50%
+	behaviour: url(PIE.htc)
+
+body
+	font-family: 'Open Sans', sans-serif
+	font-size: 12px
+	color: #00768d
+
+a
+	color: #00768d
+h1, h2, h3
+	text-transform: uppercase
+h1
+	font-size: 25pt
+h3
+	font-size: 13pt
+p, li
+	color: #636363
+	font-size: 15pt
+	line-height: 19.5pt
+
+.content
+	width: 1229px
+	height: 100%
+	margin: 0 auto
+
+header
+	width: 100%
+	height: 155px
+	min-height: 132px
+	.content
+		margin-right: 23%
+		.right, .left
+			float: left
+			width: 50%
+			height: 100%
+		.right
+			#logo
+				float: left
+				margin-top: 48px
+				margin-left: 25%
+				img
+					width: 100%
+		.left
+			#nav
+				float: right
+				display: block
+				background: url("../img/menu.png") 77px top no-repeat
+				height: 24px
+				width: 104px
+				position: relative
+				top: 41%
+				left: -14%
+				#menu-text
+					margin-top: 3px
+					display: inline-block
+					font-size: 14pt
+					text-transform: uppercase
+				ul
+					display: none
+					list-style: none
+					background-color: #ebebeb
+					width: 200px
+
+					.active
+						background-color: #31af90
+
+						a
+							color: #fff
+
+					li
+						padding: 10px
+
+					a
+						text-decoration: none
+				&:hover
+					cursor: pointer
+
+article
+	background: url("../img/home-bg.png") center top
+	background-size: auto
+	border: 1px solid #cccccc
+	border-left: 0px
+	border-right: 0px
+	height: auto
+	width: 100%
+	margin: 0 auto
+
+	.banner
+		background: url('../img/sub-page-banner-bg.png') left top no-repeat
+		border-bottom: 30px solid #ebebeb
+		.content
+			text-align: center
+	.content-area-container
+		.description
+			width: 1229px
+			margin: 0 auto
+			.menu
+				float: left
+				width: 20%
+				ul
+					list-style: none
+					li.active
+						span
+							color: #fff
+					li
+						width: 70%
+						height: 69px
+						cursor: pointer
+						padding: 0 0 0 75px
+						span
+							padding-top: 13px
+							display: block
+							font-size: 16pt
+							text-transform: uppercase
+							width: 175px
+							color: #d8d8d8
+						&:first-child
+							background: url('../img/cleanse-nav-icon-off.png') 10px 10px no-repeat
+						&:first-child.active
+							background: url('../img/cleanse-nav-icon.png') 10px 10px no-repeat
+							background-color: #31af90
+						&:nth-child(2)
+							background: url('../img/mgmt-nav-icon-off.png') 10px 10px no-repeat
+						&:nth-child(2).active
+							background: url('../img/mgmt-nav-icon.png') 10px 10px no-repeat
+							background-color: #31af90
+						&:nth-child(3)
+							background: url('../img/market-nav-icon-off.png') 10px 10px no-repeat
+						&:nth-child(3).active
+							background: url('../img/market-nav-icon.png') 10px 10px no-repeat
+							background-color: #31af90
+			#mgmt-content, #market-content
+				display: none
+
+			.content-area
+				float: left
+				width: 80%
+				background: url('../img/content-bg.png') left top repeat-x
+				margin-bottom: 20px
+				h1
+					color: #fff
+					padding: 19px 0 0 42px
+					display: inline-block
+				.floated-text
+					width: 100%
+					padding: 30px 0px 0px 42px
+
+					ul
+						margin: 0.75em 0
+						padding: 0 1em
+						list-style: none
+
+					li:before  
+						content: ""
+						border-color: transparent #00768d
+						border-style: solid
+						border-width: 0.35em 0 0.35em 0.45em
+						display: inline-block
+						height: 0
+						width: 0
+					li
+						margin-bottom: 20px
+						span
+							margin-left: 10px
+					p
+						margin-bottom: 20px
+					img
+						margin-left: 20px
+				.content-text
+					clear: both
+					padding-bottom: 30px
+					ul
+						padding-left: 20px
+					p
+						margin-bottom: 20px
+				.floated-img
+					width: 28%
+					margin-top: 20px
+				.floated-img.right
+					width: 28%
+
+	.content
+		.left
+			width: 60%
+			height: 100%
+			.hero-msg
+				display: block
+				width: 90%
+				img
+					float: left
+					margin-top: 11%
+					margin-left: 5%
+					width: 100%
+			.feature-links
+				display: inline-block
+				padding: 23px 0px 0px 10px
+				margin: 11% 0 5% 11%
+				background: #fff
+				height: 295px
+
+				#construction
+					font-size: 34px
+					font-weight: bold
+					padding-bottom: 16px
+					display: block
+					text-align: center
+				ul
+					list-style: none
+
+					li
+						height: 81px
+						a
+							text-decoration: none
+							margin: 7% 0 0 29%
+							display: inline-block 
+
+							img
+								width: 100%
+					#mgmt
+						background: url("../img/icons_1.png") left top no-repeat
+						-webkit-background-size: 23%
+						-moz-background-size: 23%
+						-o-background-size: 23%
+						background-size: 23%
+
+					#cleanse
+						background: url("../img/icons_2.png") left top no-repeat
+						-webkit-background-size: 23%
+						-moz-background-size: 23%
+						-o-background-size: 23%
+						background-size: 23%
+						
+					#market
+						background: url("../img/icons_3.png") left top no-repeat
+						-webkit-background-size: 23%
+						-moz-background-size: 23%
+						-o-background-size: 23%
+						background-size: 23%
+	.content-area-container.mobile
+		display: none
+
+.caption
+	border: 1px dashed #00a4b6
+	display: inline-block
+	padding: 5px
+	text-transform: uppercase
+	margin-bottom: 10px
+	font-size: 20px
+
+footer
+	width: 100%
+	height: 211px
+	#copyright
+		float: left
+		margin: 19px 0px 0px 2%
+		small
+			line-height: 16px
+		#footer-logo
+			vertical-align: middle
+			margin-top: 20px
+			img
+				display: inline-block
+				vertical-align: middle
+	#footer-logo-mobile
+		display: none
+	#social
+		float: right
+		span
+			display: block
+			margin: 19px 0px 10px 0px
+		ul
+			list-style: none
+			display: block
+			float: right
+			li
+				float: left
+				img
+					padding-left: 6px
+.social-icon
+	width: 28px
+	height: 25px
+
+//** Home Page **//
+
+#home							
+	.right
+		height: 100%
+		width: 40%
+		img
+			margin-top: 10%
+			width: 100%
+			height: auto
+
+//** Services Page **//
+#services
+	article
+		.content-area-container
+			.description
+				.menu.mobile
+					display: none
+
+//** Services & Case Studies Detail **//
+#services-detail, #case-studies-detail
+	article
+		.banner
+			.content
+				img
+					width: 100%
+		.content-area-container
+			.description
+				width: 100%
+				.content-area
+					background: none
+					width: 100%
+					padding: 0px 20px
+
+					.subheader
+						margin: 20px 0
+					h1
+						color: #00758c
+						font-size: 21pt
+						padding: 10px 0 10px 0
+					h2
+						font-size: 16pt
+				.menu
+					float: none
+					display: block
+					width: 100%
+					ul
+						height: 68px
+						li
+							background: none
+							float: left
+							width: 33%
+							height: 48px
+							border-right: 1px solid #fff
+							padding: 10px 0px
+							text-align: center
+							text-transform: uppercase
+							span
+								color: #fff
+								width: 100%
+								font-size: 13pt
+							a
+								color: #fff
+								text-decoration: none
+
+				.detail-img
+					text-align: center
+
+#case-studies-detail
+	article
+		.content-area-container
+			.description
+				.menu
+					ul
+						li
+							background-color: #97d8e7
+
+#services-detail
+	article
+		.content-area-container
+			.description
+				.menu
+					ul
+						li
+							background-color: #31af90
+				.content-area
+					.detail-content
+						.detail-text
+							p
+								padding-bottom: 20px
+							ul
+								margin: 0.75em 0
+								padding: 0 1em
+								list-style: none
+
+							li:before  
+								content: ""
+								border-color: transparent #00768d
+								border-style: solid
+								border-width: 0.35em 0 0.35em 0.45em
+								display: inline-block
+								height: 0
+								width: 0
+							li
+								margin-bottom: 20px
+								span
+									margin-left: 10px
+					
+//** Case Studies **//		
+#case-studies-landing
+	article
+		background: url("../img/case-studies-home-bg.jpg") center top no-repeat
+		height: 743px
+		width: 100%
+		display: block
+
+		.cs-logo
+			@include circle
+			width: 100px
+			height: 100px
+			background-color: #cccccc
+			opacity: .5
+			img
+				width: 90%
+				margin-top: 37px
+				margin-left: 6px
+				opacity: 1
+		.cs-logo:hover
+			background-color: transparent
+			border: 10px solid #31af90
+
+		#study-1
+			margin-top: 10%
+			margin-left: 10%
+		#study-1:hover
+			margin-top: 9.5%
+			margin-left: 9%
+
+//** Exceptions **//
+#services, #contact, #services-detail
+	article
+		background: none
+
+//** Contact Us **//
+#contact
+	article
+		.banner
+			border-bottom: 30px solid #97d8e7
+	.content-area
+		background: none
+		.left
+			width: 70%
+		.right
+			width: 20%
+			line-height: 1.5em
+			ul
+				list-style: none
+
+				&:first-child
+					margin-top: 33%
+				li
+					margin-bottom: 20px
+					p
+						display: block
+					h3
+						margin-bottom: 5px
+					.web
+						li
+							float: left
+							margin-right: 3px
+							margin-bottom: 0
+		#contact-form
+			margin: 20px 0 20px 0
+			form
+				margin: 20px 0
+				input, button
+					border: 0px
+				input
+					background-color: #ebebeb
+					color: #acacac
+					width: 45%
+					height: 45px
+					margin-bottom: 10px
+					padding: 10px
+					&:focus
+						background-color: #31af90
+						color: #fff
+						@include input-placeholder
+							color: #fff
+					@include input-placeholder
+						font-size: 12pt
+						height: 100%
+				input
+					&:nth-child(2)
+						float: right
+				button
+					background-color: #31af90
+					color: #fff
+					height: 45px
+					width: 20%
+					float: right
+					font-size: 12pt
+				textarea
+					font-size: 12pt
+					font-family: 'Open Sans', sans-serif
+					display: block
+					width: 97%
+					height: 150px
+					background-color: #ebebeb
+					color: #acacac
+					margin-bottom: 10px
+					padding: 10px
+					border: 0px
+
+					&:focus
+						background-color: #31af90
+						color: #fff
+
+						@include input-placeholder
+							color: #fff
+
+@media only screen and (max-width : 1250px)
+	body
+		.content
+			width: 100%
+			
+//** Mobile **//
+@media only screen and (max-width: 774px)
+	#services
+		article
+			text-align: center
+			.banner
+				.content
+					img
+						width: 100%
+			.content-area-container
+				display: none
+			.content-area-container.mobile
+				display: block
+				.mobile-icon
+					display: block
+
+
+@media only screen and (max-width : 767px)
+	body
+		article
+			.content
+				.left
+					.feature-links	
+						height: 50%
+						#construction
+							font-size: 18px
+						ul
+							li
+								height: 57px
+		footer
+			#copyright
+				text-align: center
+				width: 100%
+				#footer-logo
+					display: none
+			#footer-logo-mobile
+				width: 50%
+				text-align: center
+				float: left
+				display: block
+				span
+					margin: 19px 0px 10px 0px
+					display: block
+				img
+					display: block
+					margin: 0 auto
+			#social
+				width: 50%
+				text-align: center
+				float: left
+				ul
+					float: none
+					display: inline-block
+
+
+		
