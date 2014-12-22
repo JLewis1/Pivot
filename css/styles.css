@@ -271,6 +271,8 @@ footer {
   margin-top: 10%;
   width: 100%;
   height: auto; }
+#home #cluster {
+  width: 40%; }
 
 #services article .content-area-container .description .menu.mobile {
   display: none; }
