@@ -54,40 +54,41 @@ header
 				margin-left: 25%
 				img
 					width: 100%
-		.left
-			#nav
-				float: right
-				display: block
-				background: url("../img/menu.png") 77px top no-repeat
-				height: 24px
-				width: 104px
-				position: relative
-				top: 41%
-				left: -14%
-				#menu-text
-					margin-top: 3px
-					display: inline-block
-					font-size: 14pt
-					text-transform: uppercase
-				ul
-					display: none
-					list-style: none
-					background-color: #ebebeb
-					width: 200px
+#nav
+	float: right
+	display: block
+	background: url("../img/menu.png") 77px top no-repeat
+	height: 24px
+	width: 104px
+	position: relative
+	top: 41%
+	left: -14%
+	#menu-text
+		margin-top: 3px
+		display: inline-block
+		font-size: 14pt
+		text-transform: uppercase
+	ul
+		display: none
+		list-style: none
+		background-color: #ebebeb
+		width: 200px
+		margin-top: 10px
 
-					.active
-						background-color: #31af90
+		.active
+			background-color: #31af90
 
-						a
-							color: #fff
+			a
+				color: #fff
 
-					li
-						padding: 10px
+		li
+			padding: 10px
 
-					a
-						text-decoration: none
-				&:hover
-					cursor: pointer
+		a
+			text-decoration: none
+			display: block
+	&:hover
+		cursor: pointer
 
 article
 	background: url("../img/home-bg.png") center top
@@ -298,8 +299,6 @@ footer
 
 #home							
 	.right
-		height: 100%
-		width: 40%
 		img
 			margin-top: 10%
 			width: 100%
@@ -522,6 +521,8 @@ footer
 			
 //** Mobile **//
 @media only screen and (max-width: 774px)
+
+	//** Services **//
 	#services
 		article
 			text-align: center
