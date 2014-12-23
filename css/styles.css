@@ -286,31 +286,31 @@ footer {
 #services article .content-area-container .description .menu.mobile {
   display: none; }
 
-#services-detail article .banner .content img, #case-studies-detail article .banner .content img {
+#services-detail article .banner .content img {
   width: 100%; }
-#services-detail article .content-area-container .description, #case-studies-detail article .content-area-container .description {
+#services-detail article .content-area-container .description {
   width: 100%; }
-  #services-detail article .content-area-container .description .content-area, #case-studies-detail article .content-area-container .description .content-area {
+  #services-detail article .content-area-container .description .content-area {
     background: none;
     width: 100%;
     padding: 0px 20px; }
-    #services-detail article .content-area-container .description .content-area .subheader, #case-studies-detail article .content-area-container .description .content-area .subheader {
+    #services-detail article .content-area-container .description .content-area .subheader {
       margin: 20px 0; }
-      #services-detail article .content-area-container .description .content-area .subheader h1, #case-studies-detail article .content-area-container .description .content-area .subheader h1 {
+      #services-detail article .content-area-container .description .content-area .subheader h1 {
         text-transform: none; }
-    #services-detail article .content-area-container .description .content-area h1, #case-studies-detail article .content-area-container .description .content-area h1 {
+    #services-detail article .content-area-container .description .content-area h1 {
       color: #00758c;
       font-size: 21pt;
       padding: 10px 0 10px 0; }
-    #services-detail article .content-area-container .description .content-area h2, #case-studies-detail article .content-area-container .description .content-area h2 {
+    #services-detail article .content-area-container .description .content-area h2 {
       font-size: 16pt; }
-  #services-detail article .content-area-container .description .menu, #case-studies-detail article .content-area-container .description .menu {
+  #services-detail article .content-area-container .description .menu {
     float: none;
     display: block;
     width: 100%; }
-    #services-detail article .content-area-container .description .menu ul, #case-studies-detail article .content-area-container .description .menu ul {
+    #services-detail article .content-area-container .description .menu ul {
       height: 68px; }
-      #services-detail article .content-area-container .description .menu ul li, #case-studies-detail article .content-area-container .description .menu ul li {
+      #services-detail article .content-area-container .description .menu ul li {
         background: none;
         float: left;
         width: 33%;
@@ -319,18 +319,41 @@ footer {
         padding: 10px 0px;
         text-align: center;
         text-transform: uppercase; }
-        #services-detail article .content-area-container .description .menu ul li span, #case-studies-detail article .content-area-container .description .menu ul li span {
+        #services-detail article .content-area-container .description .menu ul li span {
           color: white;
           width: 100%;
           font-size: 13pt; }
-        #services-detail article .content-area-container .description .menu ul li a, #case-studies-detail article .content-area-container .description .menu ul li a {
+        #services-detail article .content-area-container .description .menu ul li a {
           color: white;
           text-decoration: none; }
-  #services-detail article .content-area-container .description .detail-img, #case-studies-detail article .content-area-container .description .detail-img {
+  #services-detail article .content-area-container .description .detail-img {
     text-align: center; }
 
-#case-studies-detail article .content-area-container .description .menu ul li {
-  background-color: #97d8e7; }
+#case-studies article .banner {
+  border-color: #00a4b6; }
+#case-studies article .content-area-container {
+  background-color: white; }
+  #case-studies article .content-area-container .description .content-area .subheader {
+    background-color: whitesmoke;
+    height: 69px;
+    margin: 0; }
+    #case-studies article .content-area-container .description .content-area .subheader h1 {
+      padding-top: 16px;
+      color: #00a4b6; }
+  #case-studies article .content-area-container .description .menu {
+    min-width: 280px; }
+    #case-studies article .content-area-container .description .menu ul li {
+      background-color: white; }
+    #case-studies article .content-area-container .description .menu ul li.active {
+      background-color: #ebebeb; }
+      #case-studies article .content-area-container .description .menu ul li.active span {
+        color: #00a4b6; }
+  #case-studies article .content-area-container .description .menu.mobile {
+    display: none; }
+    #case-studies article .content-area-container .description .menu.mobile ul li {
+      background-color: #97d8e7; }
+      #case-studies article .content-area-container .description .menu.mobile ul li span {
+        color: white; }
 
 #services-detail article .content-area-container .description .menu ul li {
   background-color: #31af90; }
@@ -502,26 +525,32 @@ footer {
       font-size: 18px; }
     body article .content .left .feature-links ul li {
       height: 57px; }
-  body footer #copyright {
+
+  footer #copyright {
     text-align: center;
     width: 100%; }
-    body footer #copyright #footer-logo {
+    footer #copyright #footer-logo {
       display: none; }
-  body footer #footer-logo-mobile {
+  footer #footer-logo-mobile {
     width: 50%;
     text-align: center;
     float: left;
     display: block; }
-    body footer #footer-logo-mobile span {
+    footer #footer-logo-mobile span {
       margin: 19px 0px 10px 0px;
       display: block; }
-    body footer #footer-logo-mobile img {
+    footer #footer-logo-mobile img {
       display: block;
       margin: 0 auto; }
-  body footer #social {
+  footer #social {
     width: 50%;
     text-align: center;
     float: left; }
-    body footer #social ul {
+    footer #social ul {
       float: none;
-      display: inline-block; } }
+      display: inline-block; }
+
+  #case-studies article .content-area-container .description .menu.desktop {
+    display: none; }
+  #case-studies article .content-area-container .description .menu.mobile {
+    display: block; } }
