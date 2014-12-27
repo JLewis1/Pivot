@@ -58,8 +58,8 @@
 							<div class="menu desktop">
 								<ul>
 									<li id="cs1-btn" class="active"><span>Bell Media Inc.</span></li>
-									<li id="cs2-btn"><span>Data Management</span></li>
-									<li id="cs3-btn"><span>Data Marketing</span></li>
+									<li id="cs2-btn"><span>Financial Institution</span></li>
+									<li id="cs3-btn"><span>Major Shipping Provider</span></li>
 								</ul>
 								<div class="clear"></div>
 							</div>
@@ -71,102 +71,77 @@
 								</ul>
 								<div class="clear"></div>
 							</div>
-							<div class="content-area active" id="bell">
+							<div class="content-area active" id="case-study-1">
 								<section>
-									<div class="subheader">
-										<h1>Bell Media Inc.</h1>
-									</div>
-									<div class="floated-text">
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>Bell Media is a national leader in media distribution, creating content and building brands that entertain, inform, engage, and inspire audiences through multiple platforms, including websites and personalized email campaigns. Using their existing digital marketing bases, Bell Media markets to their users on behalf of advertising partners across their 200+ websites and 50+ email campaigns. As such, data accuracy and profile completeness is a key factor in the ability to use a user base for an advertising partner.</p>
-									</div>
+									<div class="detail-content">
+										<div class="subheader">
+											<h1>Bell Media Inc.</h1>
+										</div>
+										<div class="floated-text">
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>Bell Media is a national leader in media distribution, creating content and building brands that entertain, inform, engage, and inspire audiences through multiple platforms, including websites and personalized email campaigns. Using their existing digital marketing bases, Bell Media markets to their users on behalf of advertising partners across their 200+ websites and 50+ email campaigns. As such, data accuracy and profile completeness is a key factor in the ability to use a user base for an advertising partner.</p>
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>Challenges</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>Due to the nature of the business and their numerous acquisitions, the existing Email Marketing Databases were spread out throughout the company and stored in a variety of systems, being deployed by multiple ESPs.</p>
+											<p>Because of this, users could have and did in fact exist in multiple Email Marketing Databases across Bell Media since they were subscribed to multiple subscriptions that ranged from TSN Sports Newsletters, CTV News Breaking News Alerts to Sympatico Entertainment Newsletters. Each user profile was stored in its separate Email Marketing Database and as such profile attributes were not synched throughout the various Bell Media databases.</p>
+											<p>Because of the unsynchronized user profiles, potential revenue was lost since Bell Media properties could not capitalize on ad selling opportunities.</p>
+											<p>Since the Email Marketing Databases were stored in multiple ESPs, the synchronization of all Email Marketing Databases into a Centralized Marketing Database involved multiple API connections.</p>
+											<p>All User Profile attributes needed to be standardized and prioritized based on relevance and data accuracy since attributes could have been entered differently in multiple databases.</p>
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>Solutions</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>Consolidating and migrating user profiles from multiple separate Email Marketing Databases can be very tricky, and this project was no exception.  Pivot Development experts first went to work to identify user profile attributes, their sources of acquisition and subscription statuses including CASL Compliance.  Since these databases were not static and were in constant use, profile updates and inserts were a constant occurrence. To combat this constant movement, Pivot Development extracted all user profiles as a onetime extract and tracked nightly changes within each individual database in order to ensure that all Email Marketing Databases were constantly synched with the Centralized Marketing Database.</p>
+											<p>Once the individual Email Marketing Databases have been downloaded and synchronized with the Central Audience Database, the problem of choosing winning profile attributes was solved by using a ranking mechanism for each incoming data source. </p>
+											
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>Data Synchronization Planning</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>There were several strategies developed to complete the synchronization of data. It was determined that due to the size and complexity of the project that the synchronization would occur in manageable groups. Every Email Marketing Database was assigned to a specific move group based on identified dependencies and user/customer dependency.  By breaking the move into discrete groups, risk could be mitigated and effective contingency plans developed.</p>
+											
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>Network Architecture, Engineering, and Deployment</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>This client leveraged what we call our “tribal knowledge” which is a collection of best practices, experience, and expertise of some of the top resources in the industry. Our data experts developed the architecture for this client’s needs using existing infrastructure. This allowed the client to use their resources more efficiently. Pivot Development data experts developed detailed configurations, staged the solution, and deployed the new architecture in their Production environment.  </p>
+											
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>Managing and Ranking data validity</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>Synchronizing multiple incoming data sources takes a significant amount of business intelligence that needs to be applied to the consolidation and ranking of winning attributes. Pivot Development met with all of the key stakeholders for the individual user databases to determine and outline the relevancy and accuracy of the data gathered throughout the multiple contests and promotions that were run by the individual properties in an effort to grow their marketing bases. After outlining the data validity of each existing user database, Pivot Development had created a matrix that outlines the accuracy of each source. This matrix was used to rank individual user attributes as opposed to entire user profiles. The approach had allowed Pivot Development to determine winning profile attributes from multiple incoming sources at the point of entry and deem winning attributes from multiple sources at the same time. Since each Email Marketing Database was updated from a variety of contests, the accuracy and standardization level of data was almost non-existent. As part of the Business Intelligence layer developed by Pivot Development, all data was standardized during the synchronization process to ensure that the newly created Central Marketing Database was not only standardized, but also normalized and validated against existing Business Rules defined by Bell Media.</p>
+											
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>Managing the Nightly Synchronization</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>Synchronizing User Databases takes thorough planning and strong co-ordination to accomplish within defined move windows.  There are tight tolerances, several contingencies and every member of the team must be trained and aware of the plan.  Pivot Development developed move day plans to track progress for this client. Each Email Marketing Database that was synchronized with the newly developed Central Marketing Database was downloaded on a nightly basis and fed through the business intelligence layer in order to determine the winning profile attributes. Once the winning profile attributes were determined and the Digital Marketing Record was updated, all of the modified records were then uploaded back into each individual Email Marketing Database that is synchronized with the Central Marketing Database. This ensured that the User Profile attributes that were deemed as the winning attributes from any of the synchronized incoming sources were uploaded to all of the synchronized Email Marketing Databases to ensure that the user profiles found in multiple databases are identical and attributes can now be marketed on.</p>
+											
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>RESULTS</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>When planning meets opportunity you have success. Although this was a very complex move, it was accomplished on time, on budget, meeting the zero downtime requirements, and with few minor issues. The resulting new Central Audience Marketing Data Warehouse has allowed this customer to eliminate disparate data across the company and consolidate all instances of a user profile into one centralized Digital Marketing Record that is now shared across all properties.</p>
+											<p>The new architecture has provided the client with a highly available solution that utilizes all available Email Marketing Databases and profiles efficiently to ensure that all marketing groups are able to sell and utilize a complete user profile when marketing to their respective user base. The customer has realized an increase in revenue due to the increase in user profile attributes, and savings have been achieved by ensuring that invalid user accounts are not marketed to. These savings have been reported to have been in the range of 10-15% of their annual email expenses.</p>
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>ABOUT PIVOT DEVELOPMENT</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>Pivot Development is a data development firm with a core focus on providing strategic planning and tactical design, implementation, and optimization services. The complex data ecosystem is not static, it changes, it evolves, like a living organism; Pivot Development is here to help our customers understand those changes, identify ways to use them to their advantage, and to make the transition easy. We will deliver the solutions our customers need by vigilant pursuit of expertise in the latest technology innovations and best practices.</p>
+										</div>
+										<div class="floated-text">
+											<div class="caption"><span>THE PIVOT DEVELOPMENT DIFFERENCE</span></div>
+											<!-- <img class="right" src="img/cleanse-img.png"> -->
+											<p>Pivot Development’s collaborative culture and technology driven environment are at the center of our commitment to excellence. We continually strive to maximize return on investment for our clients by delivering the most innovative technical solutions available. We consider each project a journey we take with our clients, beginning with the right resources. Our dedicated project teams include leaders in Data and Business Intelligence strategy, implementation and technologies that deliver.</p>
+										</div>
 								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>Challenges</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>Due to the nature of the business and their numerous acquisitions, the existing Email Marketing Databases were spread out throughout the company and stored in a variety of systems, being deployed by multiple ESPs.</p>
-										<p>Because of this, users could have and did in fact exist in multiple Email Marketing Databases across Bell Media since they were subscribed to multiple subscriptions that ranged from TSN Sports Newsletters, CTV News Breaking News Alerts to Sympatico Entertainment Newsletters. Each user profile was stored in its separate Email Marketing Database and as such profile attributes were not synched throughout the various Bell Media databases.</p>
-										<p>Because of the unsynchronized user profiles, potential revenue was lost since Bell Media properties could not capitalize on ad selling opportunities.</p>
-										<p>Since the Email Marketing Databases were stored in multiple ESPs, the synchronization of all Email Marketing Databases into a Centralized Marketing Database involved multiple API connections.</p>
-										<p>All User Profile attributes needed to be standardized and prioritized based on relevance and data accuracy since attributes could have been entered differently in multiple databases.</p>
-									</div>
-								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>Solutions</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>Consolidating and migrating user profiles from multiple separate Email Marketing Databases can be very tricky, and this project was no exception.  Pivot Development experts first went to work to identify user profile attributes, their sources of acquisition and subscription statuses including CASL Compliance.  Since these databases were not static and were in constant use, profile updates and inserts were a constant occurrence. To combat this constant movement, Pivot Development extracted all user profiles as a onetime extract and tracked nightly changes within each individual database in order to ensure that all Email Marketing Databases were constantly synched with the Centralized Marketing Database.</p>
-										<p>Once the individual Email Marketing Databases have been downloaded and synchronized with the Central Audience Database, the problem of choosing winning profile attributes was solved by using a ranking mechanism for each incoming data source. </p>
-										
-									</div>
-								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>Data Synchronization Planning</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>There were several strategies developed to complete the synchronization of data. It was determined that due to the size and complexity of the project that the synchronization would occur in manageable groups. Every Email Marketing Database was assigned to a specific move group based on identified dependencies and user/customer dependency.  By breaking the move into discrete groups, risk could be mitigated and effective contingency plans developed.</p>
-										
-									</div>
-								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>Network Architecture, Engineering, and Deployment</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>This client leveraged what we call our “tribal knowledge” which is a collection of best practices, experience, and expertise of some of the top resources in the industry. Our data experts developed the architecture for this client’s needs using existing infrastructure. This allowed the client to use their resources more efficiently. Pivot Development data experts developed detailed configurations, staged the solution, and deployed the new architecture in their Production environment.  </p>
-										
-									</div>
-								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>Managing and Ranking data validity</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>Synchronizing multiple incoming data sources takes a significant amount of business intelligence that needs to be applied to the consolidation and ranking of winning attributes. Pivot Development met with all of the key stakeholders for the individual user databases to determine and outline the relevancy and accuracy of the data gathered throughout the multiple contests and promotions that were run by the individual properties in an effort to grow their marketing bases. After outlining the data validity of each existing user database, Pivot Development had created a matrix that outlines the accuracy of each source. This matrix was used to rank individual user attributes as opposed to entire user profiles. The approach had allowed Pivot Development to determine winning profile attributes from multiple incoming sources at the point of entry and deem winning attributes from multiple sources at the same time. Since each Email Marketing Database was updated from a variety of contests, the accuracy and standardization level of data was almost non-existent. As part of the Business Intelligence layer developed by Pivot Development, all data was standardized during the synchronization process to ensure that the newly created Central Marketing Database was not only standardized, but also normalized and validated against existing Business Rules defined by Bell Media.</p>
-										
-									</div>
-								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>Managing the Nightly Synchronization</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>Synchronizing User Databases takes thorough planning and strong co-ordination to accomplish within defined move windows.  There are tight tolerances, several contingencies and every member of the team must be trained and aware of the plan.  Pivot Development developed move day plans to track progress for this client. Each Email Marketing Database that was synchronized with the newly developed Central Marketing Database was downloaded on a nightly basis and fed through the business intelligence layer in order to determine the winning profile attributes. Once the winning profile attributes were determined and the Digital Marketing Record was updated, all of the modified records were then uploaded back into each individual Email Marketing Database that is synchronized with the Central Marketing Database. This ensured that the User Profile attributes that were deemed as the winning attributes from any of the synchronized incoming sources were uploaded to all of the synchronized Email Marketing Databases to ensure that the user profiles found in multiple databases are identical and attributes can now be marketed on.</p>
-										
-									</div>
-								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>RESULTS</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>When planning meets opportunity you have success. Although this was a very complex move, it was accomplished on time, on budget, meeting the zero downtime requirements, and with few minor issues. The resulting new Central Audience Marketing Data Warehouse has allowed this customer to eliminate disparate data across the company and consolidate all instances of a user profile into one centralized Digital Marketing Record that is now shared across all properties.</p>
-										<p>The new architecture has provided the client with a highly available solution that utilizes all available Email Marketing Databases and profiles efficiently to ensure that all marketing groups are able to sell and utilize a complete user profile when marketing to their respective user base. The customer has realized an increase in revenue due to the increase in user profile attributes, and savings have been achieved by ensuring that invalid user accounts are not marketed to. These savings have been reported to have been in the range of 10-15% of their annual email expenses.</p>
-									</div>
-								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>ABOUT PIVOT DEVELOPMENT</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>Pivot Development is a data development firm with a core focus on providing strategic planning and tactical design, implementation, and optimization services. The complex data ecosystem is not static, it changes, it evolves, like a living organism; Pivot Development is here to help our customers understand those changes, identify ways to use them to their advantage, and to make the transition easy. We will deliver the solutions our customers need by vigilant pursuit of expertise in the latest technology innovations and best practices.</p>
-									</div>
-								</section>
-								<section>
-									
-									<div class="floated-text">
-										<div class="caption"><span>THE PIVOT DEVELOPMENT DIFFERENCE</span></div>
-										<!-- <img class="right" src="img/cleanse-img.png"> -->
-										<p>Pivot Development’s collaborative culture and technology driven environment are at the center of our commitment to excellence. We continually strive to maximize return on investment for our clients by delivering the most innovative technical solutions available. We consider each project a journey we take with our clients, beginning with the right resources. Our dedicated project teams include leaders in Data and Business Intelligence strategy, implementation and technologies that deliver.</p>
-									</div>
-								</section>
+								
 								<!-- <div class="floated-img right"><img src="img/cleanse-img.png"></div> -->
 							</div>
-							<div class="content-area" id="mgmt-content">
+							<div class="content-area" id="case-study-2">
 								<div class="left">
 									<div class="subheader">
 										<h1>Financial Institution</h1>
@@ -178,7 +153,7 @@
 								</div>
 								<!-- <div class="floated-img right"><img src="img/cleanse-img.png"></div> -->
 							</div>
-							<div class="content-area" id="market-content">
+							<div class="content-area" id="case-study-3">
 								<div class="left">
 									<div class="subheader">
 										<h1>Major Canadian Shipping Provider</h1>

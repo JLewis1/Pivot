@@ -382,6 +382,7 @@ footer
 			background-color: #fff
 			.description
 				.content-area
+					display: none
 					.subheader
 						background-color: #f5f5f5
 						height: 69px
@@ -390,6 +391,8 @@ footer
 						h1
 							padding-top: 16px
 							color: #00a4b6
+				.content-area.active
+					display: block
 				.menu
 					min-width: 280px
 					ul
@@ -552,9 +555,8 @@ footer
 							color: #fff
 
 @media only screen and (max-width : 1250px)
-	body
-		.content
-			width: 100%
+	.content
+		width: 100%
 			
 //** Mobile **//
 @media only screen and (max-width: 774px)
@@ -576,17 +578,23 @@ footer
 
 
 @media only screen and (max-width : 767px)
-	body
-		article
-			.content
-				.left
-					.feature-links	
-						height: 50%
-						#construction
-							font-size: 18px
-						ul
-							li
-								height: 57px
+	article
+		.content-area-container
+			.description
+				.menu
+					ul
+						li
+							span
+								padding-top: 11px
+		.content
+			.left
+				.feature-links	
+					height: 50%
+					#construction
+						font-size: 18px
+					ul
+						li
+							height: 57px
 
 	footer
 		#copyright
@@ -614,11 +622,81 @@ footer
 				display: inline-block
 	#case-studies
 		article
+			.banner
+				.content
+					img
+						width: 100%
+			
 			.content-area-container
 				.description
+					width: 100%
 					.menu.desktop
 						display: none
 					.menu.mobile
 						display: block
+					.menu
+						float: none
+						display: block
+						width: 100%
+						ul
+							height: 68px
+							li
+								background: none
+								float: left
+								width: 33%
+								height: 48px
+								border-right: 1px solid #fff
+								padding: 10px 0px
+								text-align: center
+								text-transform: uppercase
+								background-color: #31af90
+
+								span
+									color: #fff
+									width: 100%
+									font-size: 13pt
+								a
+									color: #fff
+									text-decoration: none
+					.detail-img
+						text-align: center
+					.content-area
+						background: none
+						width: 100%
+						padding: 0px 20px
+
+						.subheader
+							margin: 20px 0
+							h1
+								text-transform: none
+						h1
+							color: #00758c
+							font-size: 21pt
+							padding: 10px 0 10px 0
+						h2
+							font-size: 16pt
+
+						.detail-content
+							.floated-text
+								padding: 30px 0px 0px 0px
+								p
+									padding-bottom: 20px
+								ul
+									margin: 0.75em 0
+									padding: 0 1em
+									list-style: none
+
+								li:before  
+									content: ""
+									border-color: transparent #00768d
+									border-style: solid
+									border-width: 0.35em 0 0.35em 0.45em
+									display: inline-block
+									height: 0
+									width: 0
+								li
+									margin-bottom: 20px
+									span
+										margin-left: 10px
 
 		
