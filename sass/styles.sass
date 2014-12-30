@@ -53,6 +53,8 @@ header
 				float: left
 				margin-top: 48px
 				margin-left: 37%
+				a
+					display: block
 				img
 					width: 100%
 #nav
@@ -106,6 +108,10 @@ article
 		border-bottom: 30px solid #ebebeb
 		.content
 			text-align: center
+			img
+				width: 100%
+			img.mobile
+				display: none
 	.content-area-container
 		width: 100%
 		display: block
@@ -152,7 +158,7 @@ article
 
 			.content-area
 				float: left
-				width: 75%
+				width: 68%
 				background: url('../img/content-bg.png') left top repeat-x
 				margin-bottom: 20px
 
@@ -166,7 +172,7 @@ article
 					padding: 19px 0 0 42px
 					display: inline-block
 				.floated-text
-					width: 100%
+					width: 88%
 					padding: 30px 0px 0px 42px
 
 					ul
@@ -559,25 +565,9 @@ footer
 		width: 100%
 			
 //** Mobile **//
-@media only screen and (max-width: 774px)
-
-	//** Services **//
-	#services
-		article
-			text-align: center
-			.banner
-				.content
-					img
-						width: 100%
-			.content-area-container
-				display: none
-			.content-area-container.mobile
-				display: block
-				.mobile-icon
-					display: block
 
 
-@media only screen and (max-width : 767px)
+@media only screen and (max-width: 891px)
 	article
 		.content-area-container
 			.description
@@ -586,40 +576,6 @@ footer
 						li
 							span
 								padding-top: 11px
-		.content
-			.left
-				.feature-links	
-					height: 50%
-					#construction
-						font-size: 18px
-					ul
-						li
-							height: 57px
-
-	footer
-		#copyright
-			text-align: center
-			width: 100%
-			#footer-logo
-				display: none
-		#footer-logo-mobile
-			width: 50%
-			text-align: center
-			float: left
-			display: block
-			span
-				margin: 19px 0px 10px 0px
-				display: block
-			img
-				display: block
-				margin: 0 auto
-		#social
-			width: 50%
-			text-align: center
-			float: left
-			ul
-				float: none
-				display: inline-block
 	#case-studies
 		article
 			.banner
@@ -666,7 +622,8 @@ footer
 						padding: 0px 20px
 
 						.subheader
-							margin: 20px 0
+							margin: 20px 0 0px 0
+							background-color: transparent
 							h1
 								text-transform: none
 						h1
@@ -679,6 +636,7 @@ footer
 						.detail-content
 							.floated-text
 								padding: 30px 0px 0px 0px
+							
 								p
 									padding-bottom: 20px
 								ul
@@ -698,5 +656,79 @@ footer
 									margin-bottom: 20px
 									span
 										margin-left: 10px
+@media only screen and (max-width: 774px)
 
-		
+	//** Services **//
+	#services
+		article
+			text-align: center
+			.banner
+				.content
+					img
+						width: 100%
+			.content-area-container
+				display: none
+			.content-area-container.mobile
+				display: block
+				.mobile-icon
+					display: block
+
+
+@media only screen and (max-width : 767px)
+	article
+		.content
+			.left
+				.feature-links	
+					height: 50%
+					#construction
+						font-size: 18px
+					ul
+						li
+							height: 57px
+	#nav
+		#menu-text
+			display: none
+	footer
+		#copyright
+			text-align: center
+			width: 100%
+			#footer-logo
+				display: none
+		#footer-logo-mobile
+			width: 50%
+			text-align: center
+			float: left
+			display: block
+			span
+				margin: 19px 0px 10px 0px
+				display: block
+			img
+				display: block
+				margin: 0 auto
+		#social
+			width: 50%
+			text-align: center
+			float: left
+			ul
+				float: none
+				display: inline-block
+	
+
+								
+@media only screen and (max-width : 675px)
+	article
+		.banner
+			.content
+				img
+					display: none
+				img.mobile
+					display: block
+
+@media only screen and (max-width : 575px)
+	header
+		.content
+			.right
+				#logo
+					margin-top: 0
+					position: relative
+					top: 41%

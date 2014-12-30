@@ -40,8 +40,6 @@ header {
       float: left;
       margin-top: 48px;
       margin-left: 37%; }
-      header .content .right #logo a {
-        display: block; }
       header .content .right #logo img {
         width: 100%; }
 
@@ -608,9 +606,6 @@ footer {
     article .content .left .feature-links ul li {
       height: 57px; }
 
-  #nav #menu-text {
-    display: none; }
-
   footer #copyright {
     text-align: center;
     width: 100%; }
@@ -639,8 +634,3 @@ footer {
     display: none; }
   article .banner .content img.mobile {
     display: block; } }
-@media only screen and (max-width: 575px) {
-  header .content .right #logo {
-    margin-top: 0;
-    position: relative;
-    top: 41%; } }
