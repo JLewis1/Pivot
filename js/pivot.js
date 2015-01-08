@@ -23,6 +23,20 @@ $(".description .menu li").click(
 		} 
 	});
 
+$("#previous span").click(
+	function(){
+		$(".content-area.active").prev().addClass("active");
+		$(".content-area.active").next().removeClass("active");
+		
+});
+
+$("#next span").click(
+	function(){
+		
+		$(".content-area.active").next().addClass("active");
+		$(".content-area.active").prev().removeClass("active");
+});
+
 $("#nav").click(function(){
 	$("#nav ul").toggle();
 });
