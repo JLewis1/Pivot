@@ -108,8 +108,7 @@ article
 		border-bottom: 30px solid #ebebeb
 		.content
 			text-align: center
-			img
-				width: 100%
+			
 			img.mobile
 				display: none
 	.content-area-container
@@ -153,15 +152,13 @@ article
 						&:nth-child(3).active
 							background: url('../img/market-nav-icon.png') 10px 10px no-repeat
 							background-color: #31af90
-			#mgmt-content, #market-content
-				display: none
-
 			.content-area
+				display: none
 				float: left
 				width: 68%
 				background: url('../img/content-bg.png') left top repeat-x
 				margin-bottom: 20px
-
+			
 				.subheader
 					margin: 20px 0
 					h1
@@ -208,6 +205,8 @@ article
 					margin-top: 20px
 				.floated-img.right
 					width: 28%
+			.content-area.active
+				display: block
 
 	.content
 		.left
@@ -403,11 +402,21 @@ footer
 					min-width: 280px
 					ul
 						li
+							background: none
 							background-color: #fff
+							&:first-child
+								background: url("../img/bell_media_en_blue.png") no-repeat top left
+							&:nth-child(2)
+								background: none
+							&:nth-child(3)
+								background: none
+							&:nth-child(4)
+								background: none
 						li.active
 							background-color: #ebebeb
 							span
 								color: #00a4b6
+							
 				.menu.mobile
 					display: none
 					ul

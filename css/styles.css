@@ -91,8 +91,6 @@ article {
     border-bottom: 30px solid #ebebeb; }
     article .banner .content {
       text-align: center; }
-      article .banner .content img {
-        width: 100%; }
       article .banner .content img.mobile {
         display: none; }
   article .content-area-container {
@@ -135,9 +133,8 @@ article {
             article .content-area-container .description .menu ul li:nth-child(3).active {
               background: url("../img/market-nav-icon.png") 10px 10px no-repeat;
               background-color: #31af90; }
-      article .content-area-container .description #mgmt-content, article .content-area-container .description #market-content {
-        display: none; }
       article .content-area-container .description .content-area {
+        display: none;
         float: left;
         width: 68%;
         background: url("../img/content-bg.png") left top repeat-x;
@@ -186,6 +183,8 @@ article {
           margin-top: 20px; }
         article .content-area-container .description .content-area .floated-img.right {
           width: 28%; }
+      article .content-area-container .description .content-area.active {
+        display: block; }
   article .content .left {
     width: 60%;
     height: 100%; }
@@ -353,7 +352,16 @@ footer {
   #case-studies article .content-area-container .description .menu {
     min-width: 280px; }
     #case-studies article .content-area-container .description .menu ul li {
+      background: none;
       background-color: white; }
+      #case-studies article .content-area-container .description .menu ul li:first-child {
+        background: url("../img/bell_media_en_blue.png") no-repeat top left; }
+      #case-studies article .content-area-container .description .menu ul li:nth-child(2) {
+        background: none; }
+      #case-studies article .content-area-container .description .menu ul li:nth-child(3) {
+        background: none; }
+      #case-studies article .content-area-container .description .menu ul li:nth-child(4) {
+        background: none; }
     #case-studies article .content-area-container .description .menu ul li.active {
       background-color: #ebebeb; }
       #case-studies article .content-area-container .description .menu ul li.active span {
