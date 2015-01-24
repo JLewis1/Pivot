@@ -510,7 +510,7 @@ footer {
         font-size: 12pt;
         font-family: "Open Sans", sans-serif;
         display: block;
-        width: 97%;
+        width: 98%;
         height: 150px;
         background-color: #ebebeb;
         color: #acacac;
@@ -537,7 +537,10 @@ footer {
 @media only screen and (max-width: 1175px) {
   #contact .content-area #contact-form {
     width: 95%;
-    padding: 0 3%; }
+    padding: 0 3%;
+    margin-top: 0px; }
+    #contact .content-area #contact-form p {
+      display: none; }
     #contact .content-area #contact-form form input {
       padding: 1%; }
   #contact .content-area .left {
@@ -551,6 +554,8 @@ footer {
       margin-top: 10px; }
   #contact .content-area #mobile-contact {
     display: block; }
+    #contact .content-area #mobile-contact p {
+      padding: 20px 0; }
   #contact .content-area #desktop-contact {
     display: none; } }
 @media only screen and (max-width: 891px) {
@@ -674,6 +679,9 @@ footer {
   article .banner .content img {
     display: none; }
   article .banner .content img.mobile {
+    display: block; }
+
+  #contact article .banner .content img {
     display: block; } }
 @media only screen and (max-width: 575px) {
   header .content .right #logo {
