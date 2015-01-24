@@ -108,7 +108,8 @@ article
 		border-bottom: 30px solid #ebebeb
 		.content
 			text-align: center
-			
+			img
+				width: 100%
 			img.mobile
 				display: none
 	.content-area-container
@@ -314,6 +315,8 @@ footer
 #home							
 	#cluster
 		width: 40%
+		img
+			width: 100%
 
 //** Services Page **//
 #services
@@ -500,6 +503,8 @@ footer
 			border-bottom: 30px solid #97d8e7
 	.content-area
 		background: none
+		#mobile-contact
+			display: none
 		.left
 			width: 70%
 		.right
@@ -577,7 +582,30 @@ footer
 			
 //** Mobile **//
 
-
+@media only screen and (max-width : 1175px)
+	#contact
+		.content-area
+			#contact-form
+				width: 95%
+				padding: 0 3%
+				form
+					input
+						padding: 1%
+			.left
+				display: block
+			.right
+				display: block
+				float: left
+				width: 95%
+				padding: 0 3%
+				ul
+					&:first-child
+						margin-top: 10px
+			#mobile-contact
+				display: block
+			#desktop-contact
+				display: none
+	
 @media only screen and (max-width: 891px)
 	article
 		.content-area-container

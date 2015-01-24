@@ -91,6 +91,8 @@ article {
     border-bottom: 30px solid #ebebeb; }
     article .banner .content {
       text-align: center; }
+      article .banner .content img {
+        width: 100%; }
       article .banner .content img.mobile {
         display: none; }
   article .content-area-container {
@@ -283,6 +285,8 @@ footer {
 
 #home #cluster {
   width: 40%; }
+  #home #cluster img {
+    width: 100%; }
 
 #services article .content-area-container .description .menu.mobile {
   display: none; }
@@ -431,6 +435,8 @@ footer {
   border-bottom: 30px solid #97d8e7; }
 #contact .content-area {
   background: none; }
+  #contact .content-area #mobile-contact {
+    display: none; }
   #contact .content-area .left {
     width: 70%; }
   #contact .content-area .right {
@@ -528,6 +534,25 @@ footer {
 @media only screen and (max-width: 1250px) {
   .content {
     width: 100%; } }
+@media only screen and (max-width: 1175px) {
+  #contact .content-area #contact-form {
+    width: 95%;
+    padding: 0 3%; }
+    #contact .content-area #contact-form form input {
+      padding: 1%; }
+  #contact .content-area .left {
+    display: block; }
+  #contact .content-area .right {
+    display: block;
+    float: left;
+    width: 95%;
+    padding: 0 3%; }
+    #contact .content-area .right ul:first-child {
+      margin-top: 10px; }
+  #contact .content-area #mobile-contact {
+    display: block; }
+  #contact .content-area #desktop-contact {
+    display: none; } }
 @media only screen and (max-width: 891px) {
   article .content-area-container .description .menu ul li span {
     padding-top: 11px; }
