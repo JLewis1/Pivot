@@ -93,7 +93,7 @@ article {
       text-align: center; }
       article .banner .content img {
         width: 100%; }
-      article .banner .content img.mobile {
+      article .banner .content img.mobile, article .banner .content img.tablet {
         display: none; }
   article .content-area-container {
     width: 100%;
@@ -296,6 +296,7 @@ footer {
 #services-detail article .content-area-container .description {
   width: 100%; }
   #services-detail article .content-area-container .description .content-area {
+    display: block;
     background: none;
     width: 100%;
     padding: 0px 20px; }
@@ -403,6 +404,10 @@ footer {
   height: 743px;
   width: 100%;
   display: block; }
+  #case-studies-landing article img.tablet {
+    display: none; }
+  #case-studies-landing article img.mobile {
+    display: none; }
   #case-studies-landing article .cs-logo {
     border-radius: 50%;
     behaviour: url(PIE.htc);
@@ -427,6 +432,8 @@ footer {
   #case-studies-landing article #study-1:hover {
     margin-top: 9.5%;
     margin-left: 9%; }
+#case-studies-landing .content.mobile {
+  display: none; }
 
 #services article, #contact article, #services-detail article {
   background: none; }
@@ -674,7 +681,29 @@ footer {
     float: left; }
     footer #social ul {
       float: none;
-      display: inline-block; } }
+      display: inline-block; }
+
+  #case-studies-landing article {
+    background: url("../img/home-bg.png") no-repeat left top;
+    background-size: 100% 100%;
+    height: 100%; }
+    #case-studies-landing article .content.desktop {
+      display: none; }
+    #case-studies-landing article img.tablet {
+      display: block;
+      width: 100%; }
+  #case-studies-landing .content.mobile {
+    display: block; }
+    #case-studies-landing .content.mobile li {
+      padding: 10px 20px 10px 40px;
+      border-bottom: 1px solid #dedede; }
+      #case-studies-landing .content.mobile li a {
+        color: #00a4b6;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none; }
+      #case-studies-landing .content.mobile li:nth-child(4) {
+        border: none; } }
 @media only screen and (max-width: 675px) {
   article .banner .content img {
     display: none; }
@@ -682,6 +711,11 @@ footer {
     display: block; }
 
   #contact article .banner .content img {
+    display: block; } }
+@media only screen and (max-width: 620px) {
+  #case-studies-landing article img.tablet {
+    display: none; }
+  #case-studies-landing article img.mobile {
     display: block; } }
 @media only screen and (max-width: 575px) {
   header .content .right #logo {

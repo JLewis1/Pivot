@@ -110,7 +110,7 @@ article
 			text-align: center
 			img
 				width: 100%
-			img.mobile
+			img.mobile, img.tablet
 				display: none
 	.content-area-container
 		width: 100%
@@ -337,6 +337,7 @@ footer
 			.description
 				width: 100%
 				.content-area
+					display: block
 					background: none
 					width: 100%
 					padding: 0px 20px
@@ -465,7 +466,11 @@ footer
 		height: 743px
 		width: 100%
 		display: block
-
+		img.tablet
+			display: none
+		img.mobile
+			display: none
+		
 		.cs-logo
 			@include circle
 			width: 100px
@@ -490,6 +495,8 @@ footer
 		#study-1:hover
 			margin-top: 9.5%
 			margin-left: 9%
+	.content.mobile
+		display: none
 
 //** Exceptions **//
 #services, #contact, #services-detail
@@ -756,7 +763,28 @@ footer
 			ul
 				float: none
 				display: inline-block
-	
+	#case-studies-landing
+		article
+			background: url('../img/home-bg.png') no-repeat left top
+			background-size: 100% 100%
+			height: 100%
+			.content.desktop
+				display: none
+			img.tablet
+				display: block
+				width: 100%
+		.content.mobile
+			display: block	
+			li
+				padding: 10px 20px 10px 40px
+				border-bottom: 1px solid #dedede
+				a
+					color: #00a4b6
+					font-weight: bold
+					text-transform: uppercase
+					text-decoration: none
+				&:nth-child(4)
+					border: none
 
 								
 @media only screen and (max-width : 675px)
@@ -774,6 +802,14 @@ footer
 					img
 						display: block
 
+@media only screen and (max-width : 620px)
+	#case-studies-landing
+		article
+			img.tablet
+				display: none
+			img.mobile
+				display: block
+
 @media only screen and (max-width : 575px)
 	header
 		.content
@@ -782,3 +818,4 @@ footer
 					margin-top: 0
 					position: relative
 					top: 41%
+
