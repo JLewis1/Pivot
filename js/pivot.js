@@ -22,6 +22,28 @@ else if (hash == "market-content"){
 	$("#market-content").addClass("active");
 }
 
+//Case Studies deep linking
+
+if(hash == "cs1"){
+	contentArea.removeClass("active");
+	menuItem.removeClass("active");
+	$("#cs1").addClass("active");
+}
+else if(hash == "cs2"){
+	contentArea.removeClass("active");
+	menuItem.removeClass("active");
+	$("#cs2").addClass("active");
+}
+else if(hash == "cs3"){
+	contentArea.removeClass("active");
+	menuItem.removeClass("active");
+	$("#cs3").addClass("active");
+}
+else if(hash == "cs4"){
+	contentArea.removeClass("active");
+	menuItem.removeClass("active");
+	$("#cs4").addClass("active");
+}
 //Menu functions
 menuItem.click(
 	function(){
