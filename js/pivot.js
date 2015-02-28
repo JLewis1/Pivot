@@ -1,5 +1,5 @@
 var hash = document.URL.substr(document.URL.indexOf('#')+1); 
-var menuItem = $(".description .menu li");
+var menuItem = $(".description .menu.desktop li");
 var contentArea = $(".content-area");
 
 //Homepage deep linking
@@ -76,18 +76,27 @@ menuItem.click(
 	});
 
 //Mobile toggle buttons
+var first = $(".content-area").first();
+var last = $(".content-area").last();
+
 $("#previous span").click(
 	function(){
-		$(".content-area.active").prev().addClass("active");
-		$(".content-area.active").next().removeClass("active");
-		
+		if(first.is(":visible")){
+			return false;
+		} else {
+			$(".content-area:visible").prev().show().next().hide();		
+			$(".content-area.active").removeClass("active");
+		}
 });
 
 $("#next span").click(
 	function(){
-		
-		$(".content-area.active").next().addClass("active");
-		$(".content-area.active").prev().removeClass("active");
+		if(last.is(":visible")){
+			return false;
+		} else {
+			$(".content-area:visible").next().show().prev().hide();
+			$(".content-area.active").removeClass("active");
+		}
 });
 
 //Main Nav
