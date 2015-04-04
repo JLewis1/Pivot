@@ -107,3 +107,30 @@ $("#nav").click(function(){
 $("#nav #navigation-menu ul li").hover(function(){
 	$(this).toggleClass("active");
 });
+
+//Validation
+
+$.validator.setDefaults({
+	submitHandler: function() {
+		alert("submitted!");
+	}
+});
+
+$().ready(function() {
+	// validate the comment form when it is submitted
+	("#contactForm").validate({
+		rules: {
+			cname: "required",
+			email: {
+				required: true,
+				email: true
+			}			
+		},
+		messages: {
+			cname: "This field is required",
+			email: "Please enter a valid email address"
+		}
+	});
+
+});
+	

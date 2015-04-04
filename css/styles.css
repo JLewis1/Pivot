@@ -475,6 +475,8 @@ footer {
     margin: 20px 0 20px 0; }
     #contact .content-area #contact-form form {
       margin: 20px 0; }
+      #contact .content-area #contact-form form label {
+        display: none; }
       #contact .content-area #contact-form form input, #contact .content-area #contact-form form button {
         border: 0px; }
       #contact .content-area #contact-form form input {
@@ -483,7 +485,8 @@ footer {
         width: 45%;
         height: 45px;
         margin-bottom: 10px;
-        padding: 10px; }
+        padding: 10px;
+        font-size: 12pt; }
         #contact .content-area #contact-form form input:focus {
           background-color: #31af90;
           color: white; }
