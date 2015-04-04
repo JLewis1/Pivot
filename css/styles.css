@@ -455,6 +455,8 @@ footer {
   #contact .content-area .right {
     width: 20%;
     line-height: 1.5em; }
+    #contact .content-area .right a {
+      text-decoration: none; }
     #contact .content-area .right ul {
       list-style: none; }
       #contact .content-area .right ul:first-child {

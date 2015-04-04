@@ -55,12 +55,12 @@ menuItem.click(
 			if($(this).is(":nth-child(1)")) 
 			{
 				contentArea.removeClass("active");
-				$(".content-area:eq(0)").addClass("active");
+				$(".content-area:eq(1)").addClass("active");
 			} 
 			else if($(this).is(":nth-child(2)")) 
 			{
 				contentArea.removeClass("active");
-				$(".content-area:eq(1)").addClass("active");
+				$(".content-area:eq(0)").addClass("active");
 			} 
 			else if($(this).is(":nth-child(3)")) 
 			{
