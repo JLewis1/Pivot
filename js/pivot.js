@@ -112,23 +112,17 @@ $("#nav #navigation-menu ul li").hover(function(){
 
 $.validator.setDefaults({
 	submitHandler: function() {
-		alert("submitted!");
+		alert("Thank you for contacting us.");
 	}
 });
 
 $().ready(function() {
 	// validate the comment form when it is submitted
-	("#contactForm").validate({
-		rules: {
-			cname: "required",
-			email: {
-				required: true,
-				email: true
-			}			
-		},
+	$("#contactForm").validate({
 		messages: {
-			cname: "This field is required",
-			email: "Please enter a valid email address"
+			name: "This field is required",
+			email: "Please enter a valid email address",
+			message: "This field is required"
 		}
 	});
 

@@ -475,17 +475,19 @@ footer {
     margin: 20px 0 20px 0; }
     #contact .content-area #contact-form form {
       margin: 20px 0; }
+      #contact .content-area #contact-form form .right, #contact .content-area #contact-form form .left {
+        width: 45%; }
       #contact .content-area #contact-form form label {
-        display: none; }
+        display: inline-block !important; }
       #contact .content-area #contact-form form input, #contact .content-area #contact-form form button {
         border: 0px; }
       #contact .content-area #contact-form form input {
         background-color: #ebebeb;
         color: #acacac;
-        width: 45%;
+        width: 96%;
         height: 45px;
         margin-bottom: 10px;
-        padding: 10px;
+        padding: 9px;
         font-size: 12pt; }
         #contact .content-area #contact-form form input:focus {
           background-color: #31af90;

@@ -80,8 +80,12 @@
 								<div class="left" id="contact-form">
 									<p>Have any questions or an inquiry? Send us a note, we would love to hear from you!</p>
 									<form id="contactForm" method="get" action="">
-										<input type="text" id="cname" name="name" required placeholder="Name">
-										<input type="text" id="cemail" name="email" required placeholder="Email">
+										<div class="left">
+											<input type="text" id="cname" name="name" required minlength="2" placeholder="Name">
+										</div>
+										<div class="right">
+											<input type="email" id="cemail" name="email" required placeholder="Email">
+										</div>
 										<textarea name="message" id="ccomment" required placeholder="Message"></textarea>
 										<button type="submit" value="Submit">Send</button>
 									</form>
