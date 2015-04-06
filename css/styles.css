@@ -45,7 +45,7 @@ header {
       header .content .right #logo img {
         width: 100%; }
 
-#nav {
+.nav {
   float: right;
   display: block;
   background: url("../img/menu.png") 77px top no-repeat;
@@ -53,28 +53,42 @@ header {
   width: 104px;
   position: relative;
   top: 41%;
-  left: -31%; }
-  #nav #menu-text {
+  left: -32.2%; }
+  .nav #menu-text {
     margin-top: 3px;
     display: inline-block;
     font-size: 14pt;
     text-transform: uppercase; }
-  #nav ul {
-    display: none;
+
+#navigation-menu {
+  display: none;
+  position: absolute;
+  background-color: #ebebeb;
+  height: 100%;
+  width: 22%;
+  right: 0px;
+  top: 0px; }
+  #navigation-menu .nav {
+    float: none;
+    position: absolute;
+    top: 6.7%;
+    left: 2%; }
+  #navigation-menu ul {
     list-style: none;
-    background-color: #ebebeb;
-    width: 200px;
-    margin-top: 10px; }
-    #nav ul .active {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 11%; }
+    #navigation-menu ul .active {
       background-color: #31af90; }
-      #nav ul .active a {
+      #navigation-menu ul .active a {
         color: white; }
-    #nav ul li {
+    #navigation-menu ul li {
       padding: 10px; }
-    #nav ul a {
+    #navigation-menu ul a {
       text-decoration: none;
       display: block; }
-  #nav:hover {
+  #navigation-menu:hover {
     cursor: pointer; }
 
 article {

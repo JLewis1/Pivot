@@ -100,11 +100,11 @@ $("#next span").click(
 });
 
 //Main Nav
-$("#nav").click(function(){
-	$("#nav ul").toggle();
+$(".nav").click(function(){
+	$("#navigation-menu").toggle();
 
 });
-$("#nav #navigation-menu ul li").hover(function(){
+$("#navigation-menu ul li").hover(function(){
 	$(this).toggleClass("active");
 });
 
