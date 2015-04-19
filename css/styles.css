@@ -48,12 +48,12 @@ header {
 .nav {
   float: right;
   display: block;
-  background: url("../img/menu.png") 77px top no-repeat;
+  background: url("../img/menu.png") 76px top no-repeat;
   height: 24px;
   width: 104px;
-  position: relative;
-  top: 41%;
-  left: -32.2%; }
+  position: absolute;
+  top: 6.7%;
+  left: 78.8%; }
   .nav #menu-text {
     margin-top: 3px;
     display: inline-block;
@@ -67,12 +67,15 @@ header {
   height: 100%;
   width: 22%;
   right: 0px;
-  top: 0px; }
+  top: 0px;
+  min-width: 162px; }
   #navigation-menu .nav {
     float: none;
     position: absolute;
     top: 6.7%;
-    left: 2%; }
+    left: 2%;
+    background: url("../img/menu.png") 76px top no-repeat;
+    margin-left: 7px; }
   #navigation-menu ul {
     list-style: none;
     width: 100%;
@@ -683,8 +686,13 @@ footer {
     article .content .left .feature-links ul li {
       height: 57px; }
 
-  #nav #menu-text {
-    display: none; }
+  .nav {
+    left: 70.8%; }
+    .nav #menu-text {
+      display: none; }
+
+  #navigation-menu #menu-text {
+    display: inline-block; }
 
   footer #copyright {
     text-align: center;
@@ -752,3 +760,6 @@ footer {
 
   #services-detail article .content-area-container .description .content-area {
     width: 87%; } }
+@media only screen and (max-width: 430px) {
+  .nav {
+    left: 53.8%; } }
