@@ -536,6 +536,8 @@ footer {
           height: 100%; }
       #contact .content-area #contact-form form input:nth-child(2) {
         float: right; }
+      #contact .content-area #contact-form form .right input {
+        margin-bottom: 7px; }
       #contact .content-area #contact-form form button {
         background-color: #31af90;
         color: white;
